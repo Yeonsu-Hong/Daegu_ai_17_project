@@ -1,0 +1,165 @@
+/*초기 폼 제작자 : 17조 홍연수 - 대구 AI스쿨 일반과정 1기*/
+
+/*항동 발도르프 킨더가르텐 메인 페이지*/
+
+
+* {
+	margin: 0; /* 마진값 초기화 */
+	padding: 0; /* 패딩값 초기화 */
+
+	box-sizing: border-box; /* 박스 영역은 테두리까지 지정 */
+}
+
+ol, ul {
+	list-style: none;
+} 
+
+a { 
+	text-decoration: none;
+	color: #000000;
+ }
+img {
+	vertical-align: middle;
+}
+button {
+	border: none;
+}
+.clearfix {
+	clear: both;
+}
+
+#container {
+	margin: 0 auto; /* 화면 중앙에 배치 */
+	width: 1200px;
+}
+/* 헤더 영역 */
+header {
+	width: 100%;
+	height: 100px;
+
+	/*background-color: blue;*/
+}
+/* 항동 발도르프 킨더가르텐 : 폰트랑 글자 디자인등은 상의하기*/
+#hangdong {
+	float: left;
+	width: 1200px;
+	height: 200px;
+	/*background-color: indigo;*/
+}
+#hangdong a {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+	margin-top: 75px;
+}
+
+nav {
+	float: right;
+	width: 1200px;
+	height: 280px;
+	/*background-color: green;*/
+	/*padding-top: 40px;*/
+}
+
+
+
+/* 메뉴 구조도 */
+#top-menu {
+	/*display: inline-block;*/
+	/*height: 60px;*/
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: baseline;
+	align-content: stretch;
+
+}
+
+
+
+#top-menu > li {
+	float: left;
+	position: relative;
+}
+
+#top-menu > li > a {
+	display: block;
+	color: coral;
+	font-weight: 600;
+	/*text-shadow: 0 1px #07c;*/
+	padding: 20px 80px;
+}
+
+#top-menu > li > a:hover {
+	color: #000;
+	/*text-shadow: 0 -1px #07c;*/
+}
+
+#top-menu > li > ul {
+	display: none;
+	position: absolute;
+	width: 160px;
+	background-color: rgba(255, 255, 255, .6);
+	left: 30px;
+	margin: 0;
+	text-align: center;
+}
+
+#top-menu > li > ul > li {
+	padding: 10px 10px 10px 10px;
+}
+
+#top-menu > li > ul > li.enter {
+	padding: 10px 40px 10px 10px;
+}
+
+#top-menu > li > ul > li > a {
+	font-size: 14px;
+	padding: 10px;
+	color: #000;
+}
+
+#top-menu > li:hover > ul {
+	display: block;
+	z-index: 10;
+}
+
+#top-menu > li > ul > li > a:hover {
+	color: #f00;
+}
+
+/*MAIN IMAGE (2~3컷/ 자동 슬라이드 방식)
+-메인 문구 어린시절에 기쁨을 가지고 배우고, 익힌 것들은 삶에 깊이 내재되어 전 생애를
+거쳐 생동감 있는 생물처럼 늘 새롭게 솟아 납니다.*/
+#slideShow {
+	clear: both;
+	width: 100%;
+	height: 300px;
+	background-color: orange;
+	overflow: hidden;
+}
+
+#contents {
+	width: 100%;
+	height: 300px;
+}
+/* 공지사항 글 올림시 자동 업데이트 */
+#tabMenu {
+	float: left;
+	width: 1200px;
+	height: 100%;
+	background-color: black;
+}
+
+/*하단:  주소/연락처*/
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: gray;
+}
+
